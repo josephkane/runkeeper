@@ -1,0 +1,141 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.attr-label {
+	font-weight: bold;
+
+	.attr {
+		font-weight: normal;		
+	}	
+}
+
+.run-index-wrapper {
+	display: flex;
+	flex-direction: column;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:visited {
+			text-decoration: none;	
+		}
+	}
+
+	.run-wrapper {
+		border: 1px solid $border-color;
+		border-radius: 3px;
+		margin: 10px auto;
+		width: 90%;
+	
+		.run-header {
+			border-bottom: 1px solid $border-color;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.header-content {
+				display: flex;
+				flex-direction: column;
+
+				.run-headline {
+					font-size: 2em;
+					padding: 5px 10px;
+				}
+
+				.run-description {
+					font-style: italic;
+					padding: 0px 10px 5px;
+				}
+			}
+		}
+
+		.run-body {
+			background-color: #f0f0f0;
+			display: flex;
+			padding: 5px 10px;
+			justify-content: space-around;
+		}
+	}
+}
+
+.start-new-run {
+	display: block;
+	margin: 20px auto;
+	width: 40%;
+}
+
+.jar-index-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 90%;
+
+	.jar-card {
+		border: 1px solid $border-color;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+
+		.jar-header {
+			border-bottom: 1px solid $border-color;
+			display: flex;
+			justify-content: space-between;
+
+			.jar-number {
+				font-size: 1.7em;
+				margin: 5px 0 0 10px;
+			}
+
+			.favorite {
+				cursor: pointer;
+				margin: 5px 10px 0 0;
+			}
+		}
+
+		.jar-body {
+			display: flex;
+			flex-direction: column;
+			padding: 5px 10px;
+		}
+
+		.edit-jar {
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+			border-bottom-right-radius: 3px;
+			border-bottom-left-radius: 3px;
+			display: block;
+			width: 100%
+		}
+	}
+}
+
+.jar-index-buttons {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px auto;
+	width: 50%;
+
+	a {
+		display: inline-block;
+		width: 15%;
+	}
+}
+
